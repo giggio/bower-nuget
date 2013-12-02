@@ -1,0 +1,1 @@
+@"%~dp0..\..\Node.js.0.10.21\node.exe" "%~dp0..\..\..\node_modules\bower\bin\bower" %*

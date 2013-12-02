@@ -1,0 +1,1 @@
+This is where the dependencies will be installed with bower. You can change it editing the .bowerrc file on the root folder.
