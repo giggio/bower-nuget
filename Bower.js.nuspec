@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>Bower.js</id>
-        <version>1.2.7</version>
+        <version>1.2.7.1</version>
         <title>Bower.js</title>
         <authors>Twitter</authors>
         <owners>giggio</owners>
@@ -21,8 +21,11 @@ https://github.com/bower/bower</description>
         </dependencies>
     </metadata>
     <files>
+        <file src="build\bower.js.props" target="build\bower.js.props" />
+        <file src="build\bower.js.targets" target="build\bower.js.targets" />
         <file src="content\Scripts\lib\readmelibs.txt" target="content\Scripts\lib\readmelibs.txt" />
         <file src="content\.bowerrc" target="content\.bowerrc" />
+        <file src="content\bower.json" target="content\bower.json" />
         <file src="tools\bower.cmd" target="tools\bower.cmd" />
         <file src="tools\bower.psm1" target="tools\bower.psm1" />
         <file src="tools\init.ps1" target="tools\init.ps1" />

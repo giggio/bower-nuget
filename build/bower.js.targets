@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<BuildDependsOn>
+			RestoreBowerPkgs;
+			$(BuildDependsOn)
+		</BuildDependsOn>
+	</PropertyGroup>
+	<Target Name="RestoreBowerPkgs">
+		<Message Text="Restoring Bower packages..."/>
+		<Exec Command="bower install"/>
+		<Message Text="Bower packages restored!"/>
+    </Target>
+</Project>
