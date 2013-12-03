@@ -6,13 +6,14 @@
         <title>Bower.js</title>
         <authors>Twitter</authors>
         <owners>giggio</owners>
-        <licenseUrl>https://raw.github.com/bower/bower/master/LICENSE</licenseUrl>
+        <licenseUrl>https://raw.github.com/giggio/bower-nuget/master/LICENSE</licenseUrl>
         <projectUrl>https://github.com/giggio/bower-nuget</projectUrl>
         <iconUrl>https://pbs.twimg.com/profile_images/3536632979/66db62603f426a8fc6664081811be6d4_normal.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>A package manager for the web.
 http://bower.io/
-https://github.com/bower/bower</description>
+https://github.com/bower/bower
+https://github.com/giggio/bower-nuget</description>
         <summary />
         <copyright>Copyright 2012 Twitter, Inc.</copyright>
         <tags>bower</tags>
@@ -27,7 +28,6 @@ https://github.com/bower/bower</description>
         <file src="content\.bowerrc" target="content\.bowerrc" />
         <file src="content\bower.json.pp" target="content\bower.json.pp" />
         <file src="tools\bower.cmd" target="tools\bower.cmd" />
-        <file src="tools\bower.psm1" target="tools\bower.psm1" />
         <file src="tools\init.ps1" target="tools\init.ps1" />
         <file src="tools\install.ps1" target="tools\install.ps1" />
         <file src="LICENSE" target="LICENSE" />
