@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "$assemblyname$",
   "version": "0.0.0",
   "ignore": [
     "**/.*",

@@ -25,7 +25,7 @@ https://github.com/bower/bower</description>
         <file src="build\bower.js.targets" target="build\bower.js.targets" />
         <file src="content\Scripts\lib\readmelibs.txt" target="content\Scripts\lib\readmelibs.txt" />
         <file src="content\.bowerrc" target="content\.bowerrc" />
-        <file src="content\bower.json" target="content\bower.json" />
+        <file src="content\bower.json.pp" target="content\bower.json.pp" />
         <file src="tools\bower.cmd" target="tools\bower.cmd" />
         <file src="tools\bower.psm1" target="tools\bower.psm1" />
         <file src="tools\init.ps1" target="tools\init.ps1" />
