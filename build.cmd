@@ -1,2 +1,2 @@
 del *.nupkg
-nuget pack "%~dp0Bower.js.nuspec" %*
+nuget pack "%~dp0Bower.js.nuspec" -NoDefaultExcludes %*
