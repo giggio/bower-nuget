@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>Bower.js</id>
-        <version>1.2.7.6</version>
+        <version>1.2.7.7</version>
         <title>Bower.js</title>
         <authors>Twitter</authors>
         <owners>giggio</owners>
@@ -18,7 +18,7 @@ https://github.com/giggio/bower-nuget</description>
         <copyright>Copyright 2012 Twitter, Inc.</copyright>
         <tags>bower</tags>
         <dependencies>
-            <dependency id="Npm.js" version="1.3.15.2" />
+            <dependency id="Npm.js" version="1.3.15.3" />
         </dependencies>
     </metadata>
     <files>
