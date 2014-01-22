@@ -1,1 +1,3 @@
-@"%~dp0..\..\Node.js.0.10.21\node.exe" "%~dp0..\..\..\node_modules\bower\bin\bower" %*
+@echo off
+for /f "delims=" %%A in ('dir %~dp0..\..\node.js.* /b') do set "nodePath=%%A"
+"%~dp0..\..\%nodePath%\node.exe" "%~dp0..\..\..\node_modules\bower\bin\bower" %*
