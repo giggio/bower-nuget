@@ -13,6 +13,8 @@
 		<Message Text="Bower installed!"/>
 	</Target>
 	<Target Name="RestoreBowerPkgs" DependsOnTargets="InstallBower">
+		<Message Text="Cleaning Bower packages cache..." Condition="'$(DONT_INSTALL_BOWER)' == ''"/>
+		<Exec Command="&quot;$(MSBuildThisFileDirectory)..\tools\bower&quot; cache clean" Condition="'$(DONT_INSTALL_BOWER)' == ''" />
 		<Message Text="Restoring Bower packages..." Condition="'$(DONT_INSTALL_BOWER)' == ''"/>
 		<Exec Command="&quot;$(MSBuildThisFileDirectory)..\tools\bower&quot; install" Condition="'$(DONT_INSTALL_BOWER)' == ''" />
 		<Message Text="Bower not installed, environment variable 'DONT_INSTALL_BOWER' set." Condition="'$(DONT_INSTALL_BOWER)' != ''" />
