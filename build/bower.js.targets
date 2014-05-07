@@ -9,12 +9,12 @@
 	</PropertyGroup>
 	<Target Name="InstallBower">
 		<Message Text="Installing Bower..."/>
-		<Exec Condition=" !Exists('$(NodeModulesBower)')" Command="&quot;$(MSBuildThisFileDirectory)..\tools\npm.cmd&quot; install bower --save-dev" WorkingDirectory="$(SolutionDir)" />
+		<Exec Condition=" !Exists('$(NodeModulesBower)') AND '$(NCrunch)' != '1'" Command="&quot;$(MSBuildThisFileDirectory)..\tools\npm.cmd&quot; install bower --save-dev" WorkingDirectory="$(SolutionDir)" />
 		<Message Text="Bower installed!"/>
 	</Target>
 	<Target Name="RestoreBowerPkgs" DependsOnTargets="InstallBower">
 		<Message Text="Restoring Bower packages..." Condition="'$(DONT_INSTALL_BOWER)' == ''"/>
-		<Exec Command="&quot;$(MSBuildThisFileDirectory)..\tools\bower&quot; install" Condition="'$(DONT_INSTALL_BOWER)' == ''" />
+		<Exec Command="&quot;$(MSBuildThisFileDirectory)..\tools\bower&quot; install" Condition="'$(DONT_INSTALL_BOWER)' == '' AND '$(NCrunch)' != '1'" />
 		<Message Text="Bower not installed, environment variable 'DONT_INSTALL_BOWER' set." Condition="'$(DONT_INSTALL_BOWER)' != ''" />
 		<Message Text="Bower packages restored!" Condition="'$(DONT_INSTALL_BOWER)' == ''"/>
     </Target>
