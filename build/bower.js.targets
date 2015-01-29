@@ -9,7 +9,7 @@
 	</PropertyGroup>
 	<Target Name="InstallBower">
 		<Message Text="Installing Bower..."/>
-		<Exec Condition=" !Exists('$(NodeModulesBower)')" Command="&quot;$(MSBuildThisFileDirectory)..\tools\npm.cmd&quot; install bower --save-dev" WorkingDirectory="$(SolutionDir)" />
+		<Exec Condition=" !Exists('$(NodeModulesBower)')" Command="&quot;$(MSBuildThisFileDirectory)..\tools\npm.cmd&quot; install bower --save-dev --config.interactive=false" WorkingDirectory="$(SolutionDir)" />
 		<Message Text="Bower installed!"/>
 	</Target>
 	<Target Name="RestoreBowerPkgs" DependsOnTargets="InstallBower">
